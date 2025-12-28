@@ -44,16 +44,21 @@ export function Header() {
 
                 {/* Desktop Nav */}
                 <nav className="hidden md:flex items-center gap-8">
-                    {['Sewa', 'Jual', 'Properti Baru', 'Blog'].map((item) => (
+                    {[
+                        { label: 'Sewa', href: '/sewa' },
+                        { label: 'Jual', href: '/jual' },
+                        { label: 'Properti Baru', href: '/properti-baru' },
+                        { label: 'Blog', href: '/blog' }
+                    ].map((item) => (
                         <Link
-                            key={item}
-                            href="#"
+                            key={item.label}
+                            href={item.href}
                             className={cn(
                                 "text-sm font-medium transition-colors hover:text-[var(--color-secondary)]",
                                 isScrolled ? "text-slate-600" : "text-white/90"
                             )}
                         >
-                            {item}
+                            {item.label}
                         </Link>
                     ))}
                 </nav>

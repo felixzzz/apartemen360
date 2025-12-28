@@ -1,5 +1,6 @@
 import { Header } from '@/components/layout/header';
 import { Hero } from '@/components/home/hero';
+import Link from 'next/link';
 import { Footer } from '@/components/layout/footer';
 import { APARTMENTS } from '@/lib/data';
 import { ListingCard } from '@/components/listing/listing-card';
@@ -28,9 +29,11 @@ export default function Home() {
           </div>
 
           <div className="mt-12 text-center">
-            <Button size="lg" variant="outline" className="border-slate-300 text-slate-700 hover:text-[var(--color-primary)] hover:border-[var(--color-primary)]">
-              Lihat Semua Apartemen
-            </Button>
+            <Link href="/sewa">
+              <Button size="lg" variant="outline" className="border-slate-300 text-slate-700 hover:text-[var(--color-primary)] hover:border-[var(--color-primary)]">
+                Lihat Semua Apartemen
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

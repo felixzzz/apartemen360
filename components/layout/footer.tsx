@@ -14,17 +14,17 @@ export function Footer() {
                     <div>
                         <h4 className="text-white font-semibold mb-4">Perusahaan</h4>
                         <ul className="space-y-2 text-sm">
-                            <li><a href="#" className="hover:text-white">Tentang Kami</a></li>
-                            <li><a href="#" className="hover:text-white">Karir</a></li>
-                            <li><a href="#" className="hover:text-white">Hubungi Kami</a></li>
+                            <li><Link href="/about" className="hover:text-white">Tentang Kami</Link></li>
+                            <li><Link href="/career" className="hover:text-white">Karir</Link></li>
+                            <li><Link href="/contact" className="hover:text-white">Hubungi Kami</Link></li>
                         </ul>
                     </div>
                     <div>
                         <h4 className="text-white font-semibold mb-4">Dukungan</h4>
                         <ul className="space-y-2 text-sm">
-                            <li><a href="#" className="hover:text-white">Pusat Bantuan</a></li>
-                            <li><a href="#" className="hover:text-white">Syarat & Ketentuan</a></li>
-                            <li><a href="#" className="hover:text-white">Kebijakan Privasi</a></li>
+                            <li><Link href="/help" className="hover:text-white">Pusat Bantuan</Link></li>
+                            <li><Link href="/terms" className="hover:text-white">Syarat & Ketentuan</Link></li>
+                            <li><Link href="/privacy" className="hover:text-white">Kebijakan Privasi</Link></li>
                         </ul>
                     </div>
                 </div>
